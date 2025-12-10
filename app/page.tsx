@@ -55,6 +55,15 @@ interface AnimatedInputProps { label: string; placeholder: string; isTextArea?: 
 interface SocialIconProps { icon: React.ReactNode; href: string; }
 interface TimelineItemProps { year: string; degree: string; major: string; institution: string; location: string; logoSrc: string; font: string; }
 interface ExperienceTimelineItemProps { role: string; company: string; location: string; date: string; desc: string; tags: string[]; logoSrc: string; font: string; }
+interface ExperienceCardProps {
+  role: string;
+  company: string;
+  location: string;
+  date: string;
+  desc: string;
+  tags: string[];
+  font: string;
+}
 
 // --- MENU ANIMATION ---
 const menuVariants: Variants = {
