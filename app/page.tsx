@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
+
 import Image from "next/image"; 
 
 import { 
@@ -51,10 +52,19 @@ interface TimelineItemProps { year: string; degree: string; major: string; insti
 interface ExperienceTimelineItemProps { role: string; company: string; location: string; date: string; desc: string; tags: string[]; logoSrc: string; font: string; }
 
 // --- MENU ANIMATION ---
-const menuVariants = {
+const menuVariants: Variants = {
   closed: { opacity: 0, x: "100%" },
-  open: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 300, damping: 30 } }
+  open: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { 
+      type: "spring" as const,
+      stiffness: 300,
+      damping: 30,
+    },
+  },
 };
+
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
