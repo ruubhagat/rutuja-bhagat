@@ -231,7 +231,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[#D1E9F6] rounded-t-[500px] overflow-hidden shadow-sm flex flex-col items-center justify-end group">
             <div className="absolute inset-0 z-0">
                <Image 
-                 src="/profile.jpg" 
+                 src="/Profile.jpg" 
                  alt="Rutuja Bhagat" 
                  fill
                  className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-1000 ease-in-out"
