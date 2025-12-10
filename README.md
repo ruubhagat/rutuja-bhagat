@@ -7,10 +7,9 @@ A minimalist, high-performance personal portfolio website built with **Next.js 1
 ![Tech Stack](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![Tech Stack](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-## 🚀 Live Demo
+## Website
 
-[**View Live Portfolio**](https://your-vercel-link-here.vercel.app)  
-*(Replace this link after you deploy)*
+[**View Live Portfolio**](https://rutuja-bhagat.vercel.app/)  
 
 ## ✨ Features
 
