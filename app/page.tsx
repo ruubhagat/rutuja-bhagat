@@ -50,11 +50,8 @@ interface SkillColumnProps { icon: React.ReactNode; category: string; skills: st
 interface ProjectCardProps { title: string; subtitle: string; stack: string[]; desc: string; github: string; font: string; date?: string; }
 interface HonorItemProps { title: string; issuer: string; }
 interface CertificationLinkProps { title: string; issuer: string; href: string; }
-// UPDATED: Added 'name' prop for form handling
 interface AnimatedInputProps { label: string; placeholder: string; isTextArea?: boolean; font: string; name?: string; } 
 interface SocialIconProps { icon: React.ReactNode; href: string; }
-interface TimelineItemProps { year: string; degree: string; major: string; institution: string; location: string; logoSrc: string; font: string; }
-interface ExperienceTimelineItemProps { role: string; company: string; location: string; date: string; desc: string; tags: string[]; logoSrc: string; font: string; }
 interface ExperienceCardProps {
   role: string;
   company: string;
@@ -64,6 +61,15 @@ interface ExperienceCardProps {
   tags: string[];
   font: string;
 }
+interface SlimTimelineItemProps {
+  year: string;
+  degree: string;
+  major: string;
+  institution: string;
+  location: string;
+  font: string;
+}
+
 
 // --- MENU ANIMATION ---
 const menuVariants: Variants = {
