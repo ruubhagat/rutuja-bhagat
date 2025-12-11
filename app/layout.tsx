@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google"; // Import the fancy fonts
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
+
 
 // Configure fonts
 const playfair = Playfair_Display({ 
@@ -28,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfair.variable} ${inter.variable} antialiased bg-[#FDFCF8] text-[#1a1a1a]`}>
         {children}
+        <Analytics /> 
       </body>
     </html>
   );
